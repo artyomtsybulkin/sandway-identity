@@ -1,0 +1,17 @@
+extends index 
+
+block content
+    div.passwd
+        table
+            tr
+                th ID
+                th Account
+                th Secret Key
+                th QR
+            each user in users
+                tr
+                    td= user.userid
+                    td= user.username
+                    td.code= user.secretkey
+                    td
+                        img(src= user.qrcode).qrcode-sm

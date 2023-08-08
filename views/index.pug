@@ -1,0 +1,19 @@
+html
+    head
+        title= title
+        //link(rel='stylesheet', href='/css/styles.css')
+        link(rel='stylesheet', href='/css/sandway.css')
+        script(src='/js/script.js')
+    body
+        div.sw-header
+            ul.sw-header-panel
+                li.sw-header-panel-caption
+                    a(href="/") Authentication Server Admin
+                li.sw-header-panel-item
+                    a(href="/useradd") Add
+                li.sw-header-panel-item
+                    a(href="/userdel") Delete
+                li.sw-header-panel-item
+                    a(href="/passwd") List
+        div.sw-content
+            block content

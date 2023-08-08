@@ -1,0 +1,16 @@
+extends index 
+
+block content
+    div.sw-space
+        form(action="/useradd" method="post").sw-form
+            input(type="email", name="username", placeholder="username@domain.com")
+            br
+            input(type="text", name="service", placeholder="System Admin Panel")
+            br
+            input(type="submit", value="Add")
+            br
+        if response
+            p= "Account created."
+            p= "Account name: " + response.username
+            p.code= "Secret Key 0: " + response.secretKey
+            img(src= response.qrCode)

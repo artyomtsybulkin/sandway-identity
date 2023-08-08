@@ -1,0 +1,21 @@
+{
+	"name": "authsrv",
+	"version": "1.0.0",
+	"description": "Simple OTP authentication service",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"base32-encode": "^2.0.0",
+		"express": "^4.18.2",
+		"otplib": "^12.0.1",
+		"pug": "^3.0.2",
+		"qrcode": "^1.5.3",
+		"sqlite3": "^5.1.6"
+	}
+}
